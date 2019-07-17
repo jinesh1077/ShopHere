@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container > * {
+  width: 100%;
+}
+
+
+h1 {
+	color: #ffffff;
+	font-family: 'Bree Serif',"Lucida Console", 'serif';
+	padding-bottom: 0px;
+	padding-top: 1em;
+	font-size: 3em;
+	text-shadow: 3px 3px 3px #66b3ff;
+}
+
+
+#login{
+	padding-top: 3em;
+	padding-left: 12em;
+	float: left;
+}
+
+#signup{
+	padding-top: 3em;
+	padding-right: 8em;
+	float: right;
+}
+
+/*
+.signin{
+	padding: 3em;
+	float: bottom;
+}
+*/
+
+
+.click{
+	border: 1px solid #008060;
+	background-color: #008060;
+}
+

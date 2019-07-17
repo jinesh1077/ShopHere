@@ -1,0 +1,78 @@
+#leftslide {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+
+  width: 18%;
+  height: 150%;
+  background-color: #fcfcfc;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#middle {
+  position: absolute;
+  top: 14%;
+  left: 25%;
+  margin-left: -50px;
+  width: 75%;
+
+
+}
+
+.divimg {
+  width: 100%;
+  height: 70%;
+
+}
+
+.divdetail {
+  width: 100%;
+  height: 30%;
+
+}
+
+.divall {
+  background-color: white;
+
+  border: 2px outset whitesmoke;
+
+}
+
+.divall:hover {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+
+.imgp{
+  max-width: 190px;
+  max-height: 210px;
+
+}
+
+.pricecls {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.btnleft {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+}
+
+.spin {
+  margin: auto;
+}
+
+.divspin {
+  height: 200px;
+}
+
+
+mat-grid-tile {
+
+
+}

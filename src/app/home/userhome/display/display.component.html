@@ -1,0 +1,72 @@
+<div id="top">
+  <div id="leftslide">
+    <div>
+
+        <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="btnleft">
+                  TopWear
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+
+
+              <button mat-button (click)='leftbtn("TShirt")'  class="btnleft">TShirt</button><br>
+
+              <button mat-button (click)='leftbtn("Shirt")'  class="btnleft">Shirt</button>
+
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="btnleft">
+                  Bottomwear
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+
+
+              <button mat-button (click)='leftbtn("Jeans")'  class="btnleft">Jeans</button>
+
+            </mat-expansion-panel>
+
+          </mat-accordion>
+
+      </div>
+
+  </div>
+
+  <div id="middle">
+    <div class="divspin"  *ngIf="spinner">
+
+      </div>
+      <mat-spinner *ngIf="spinner" class="spin"></mat-spinner>
+      <mat-grid-list cols="4" rowHeight="1:1.4" [gutterSize]="'20px'">
+          <mat-grid-tile *ngFor="let item of items" >
+            <div class="divall">
+            <div class="divimg">
+            <img class="imgp" [src]="item.image.contentType">
+            </div>
+
+            <div class="divdetail">
+
+            <span class="brandcls"> {{item.brand}} </span><br>
+            <span class="pricecls" ><b> Rs.{{item.price}} </b></span>
+
+            <div>
+            <button mat-button >
+                <img src="../../../assets/res/remove.png" alt="image" class="removebtn" />
+            </button>
+            <span class="brandcls"> {{item.quantity}} </span>
+              <button mat-button >
+                  <img src="../../../assets/res/add.png" alt="image" class="addbtn" />
+              </button>
+            </div>
+
+            </div>
+            </div>
+          </mat-grid-tile>
+
+      </mat-grid-list>
+  </div>
+
+</div>
